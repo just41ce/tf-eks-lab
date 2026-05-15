@@ -6,3 +6,7 @@ terraform {
   }
 }
 provider "aws" { region = "ap-northeast-2" }
+variable "test_tag" {
+  description = "CI/CD 파이프라인 테스트용"
+  default     = "cicd-lab-test"
+}
